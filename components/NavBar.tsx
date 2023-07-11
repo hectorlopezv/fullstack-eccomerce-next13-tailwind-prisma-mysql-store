@@ -2,6 +2,7 @@ import Link from "next/link";
 import Container from "./ui/Container";
 import MainNav from "./MainNav";
 import getCategories from "@/actions/get-categories";
+import NavBarActions from "./NavBarActions";
 
 type Props = {};
 export const revalidate = 0;
