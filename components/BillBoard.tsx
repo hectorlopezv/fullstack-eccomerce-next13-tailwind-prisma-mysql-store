@@ -1,6 +1,4 @@
 import { Billboard as BillBoardType } from "@/types";
-import { data } from "autoprefixer";
-import React from "react";
 
 type Props = {
   data: BillBoardType;
