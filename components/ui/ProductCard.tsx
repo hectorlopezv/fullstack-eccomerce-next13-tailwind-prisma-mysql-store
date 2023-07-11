@@ -15,7 +15,7 @@ export default function ProductCard({ data }: Props) {
   const isMounted = useIsMounted();
   const router = useRouter();
   const handleClick = () => {
-    router.push(`/products/${data.id}`);
+    router.push(`/product/${data.id}`);
   };
   if (!isMounted) return null;
   return (
