@@ -5,16 +5,13 @@ import useCart from "@/hooks/use-cart";
 import Container from "@/components/ui/Container";
 import CartItem from "./components/CartItem";
 import Summary from "./components/Summary";
+import useIsMounted from "@/hooks/use-is-mounted";
 
 export const revalidate = 0;
 
 const CartPage = () => {
-  const [isMounted, setIsMounted] = useState(false);
+  const isMounted = useIsMounted();
   const cart = useCart();
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   if (!isMounted) {
     return null;
