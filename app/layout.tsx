@@ -4,6 +4,7 @@ import { Urbanist } from "next/font/google";
 import Footer from "@/components/Footer";
 import NavBar from "../components/NavBar";
 import { Toaster } from "react-hot-toast";
+import ToasterProvider from "@/provider/toaster-provider";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={urbanist.className}>
-        <Toaster />
+        <ToasterProvider />
         <NavBar />
         {children}
         <Footer />
