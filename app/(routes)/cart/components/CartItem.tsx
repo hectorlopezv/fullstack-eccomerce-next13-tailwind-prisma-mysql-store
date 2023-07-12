@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { X } from "lucide-react";
 import useCart from "@/hooks/use-cart";
