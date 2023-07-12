@@ -6,11 +6,8 @@ import ProductList from "@/components/ProductList";
 import Container from "@/components/ui/Container";
 import { Billboard } from "@/types";
 
-type Props = {
-  data: Billboard;
-};
 export const revalidate = 0;
-export default async function HomePage({ data }: Props) {
+export default async function HomePage() {
   const billBoards = await getBillBoards(
     "4178dbe4-b67c-4fc9-b6e3-f1663451400e"
   );
